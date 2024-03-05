@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>DH2400 Portfolio</title>
+</head>
+<body>
+  <div id="fullpage">
+    <div class="section center intro-slide">
+      <h1>DH2400 Physical Interaction Portfolio</h1>
+      <h4>A physical design portfolio by Sebastian Hällman</h4>
+      <p>Built with <a href="https://alvarotrigo.com/fullPage/">fullpage.js</a>. The source code is available on <a href="https://github.com/SebastianHallman/SebastianHallman.github.io">GitHub</a></p>
+      <p>Scroll up and down to navigate between projects and scroll to the sides to read more of the project</p>
+    </div>
+    <div class="section project1">
+      <div class="slide center">
+        <h1>Project 1: Chess but we have PE</h1>
+        <h2>Assignment 1: Not-a-button</h2>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h2>Ideation</h2>
+          <div class="grid">
+            <div class="cell">
+              <p>For this assignment, I had an initial idea to use my tattoo as a button. My computer would recognize my tattoo with the web camera and would then open a webpage. After approximately 5 hours of trying to make a reliable system, I realized that it would be to hard for me to do, so I scrapped my idea.</p>
+              <p>My second idea I got was to create a chess game where you would select the square by moving your body along a ultrasonic distance sensor. Using two ultrasonic distance sensors would make two players collaborate with each other to choose a square and move the piece. The initial sketch can be seen on the right.</p>
+            </div>
+            <div class="cell center">
+              <img src="img/Not a button sketch.png" width="95%">
+              <br>
+              <em>My initial sketch</em>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="content">
+            <h2>Prototyping - Digital</h2>
+            <div class="grid">
+              <div class="cell">
+                <p>To start off, I used digital tools to try the concept out. I did this for two reasons. First of, it is easier for me to create digital artifacts due to my disability. Second of all, I did not have access to an Arduino since I did not own any and every Arduino in MIDDLA was taken already.</p>
+                <p>I started using TinkerCAD, an online CAD service, since they have an Arduino simulator and a bunch of sensors and actuators that can be simulated. It also allowed Arduino code, which enabled me to produce working code that would be functional on an actual Arduino device. I created a simple circuit that connected two Ultrasonic Distance Sensors and wrote some code that would measure the distance in centimeters and map these to return a value between 1 and 8 (since there is 8 rows and 8 columns on a chess board). You can <a href="https://www.tinkercad.com/things/fUfPmDzW0W0-chess-but-we-have-pe">play with the circuit and the code here.</a></p>
+                <p>In addition to the circuit, I wrote a really simple processing script that simply drew a chess board and highlighted the selected square. Since I could not connect the Arduino simulator to processing, I could not do anything more with it than just showing the concept.</p>
+              </div>
+              <div class="cell center">
+                <img src="img/chessboard first version.png" width="50%">
+                <br>
+                <em>The first version of the processing sketch</em>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            
+          </div>
+        </div>
+        
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"></script>
+  <script type="text/javascript">
+    new fullpage('#fullpage', {
+    //options here
+    autoScrolling:true
+});
+  </script>
+</body>
+</html>

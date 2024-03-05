@@ -42,13 +42,13 @@
             <div class="grid">
               <div class="cell">
                 <p>To start off, I used digital tools to try the concept out. I did this for two reasons. First of, it is easier for me to create digital artifacts due to my disability. Second of all, I did not have access to an Arduino since I did not own any and every Arduino in MIDDLA was taken already.</p>
-                <p>I started using TinkerCAD, an online CAD service, since they have an Arduino simulator and a bunch of sensors and actuators that can be simulated. It also allowed Arduino code, which enabled me to produce working code that would be functional on an actual Arduino device. I created a simple circuit that connected two Ultrasonic Distance Sensors and wrote some code that would measure the distance in centimeters and map these to return a value between 1 and 8 (since there is 8 rows and 8 columns on a chess board). You can <a href="https://www.tinkercad.com/things/fUfPmDzW0W0-chess-but-we-have-pe">play with the circuit and the code here.</a></p>
-                <p>In addition to the circuit, I wrote a really simple processing script that simply drew a chess board and highlighted the selected square. Since I could not connect the Arduino simulator to processing, I could not do anything more with it than just showing the concept.</p>
+                <p>I started using TinkerCAD, an online CAD service, since they have an Arduino simulator and a bunch of sensors and actuators that can be simulated. It also allowed Arduino code, which enabled me to produce working code that would be functional on an actual Arduino device. I created a simple circuit that connected two Ultrasonic Distance Sensors and wrote some code that would measure the distance in centimeters and map these to return a value between 1 and 8 (since there is 8 rows and 8 columns on a chess board). You can <a href="https://www.tinkercad.com/things/fUfPmDzW0W0-chess-but-we-have-pe">play with the circuit and the code here.</a> (An account on TinkerCAD is needed)</p>
+                <p>In addition to the circuit, I wrote a really simple Processing script that simply drew a chess board and highlighted the selected square. Since I could not connect the Arduino simulator to Processing, I could not do anything more with it than just showing the concept.</p>
               </div>
               <div class="cell center">
                 <img src="img/chessboard first version.png" width="50%">
                 <br>
-                <em>The first version of the processing sketch</em>
+                <em>The first version of the Processing sketch</em>
               </div>
               
             </div>
@@ -56,7 +56,34 @@
         </div>
         <div class="slide">
           <div class="content">
-            
+            <h2>Prototyping - Gone physical</h2>
+            <div class="grid">
+              <div class="cell">
+                <p>While staying digital would be sufficient for the course, I felt like the interaction could not be experienced and therefore the hand in felt boring. Therefore I bought an Arduino to be able to implement it physically. I brought the Arduino to MIDDLA and Andreas helped me connect the circuit I made in TinkerCAD. However, there was only one Ultrasonic sensor available, so I had to work with that. I edited the code so I could send the data to Processing. You can see the interaction on the next slide.</p>
+                <p>I did some final polishing on the Processing sketch to make sure it looked nice. I also made it recieve data from the Arduino to be able to use that in my Processing sketch. Since I only had one sensor, I made that so you could move vertically and horisontally by implementing a simple timer that would change how the input would be used (vertically or horisontally). It was definately more janky than two sensors but it had to suffice due to the lack of sensors</p>
+              </div>
+              <div class="cell center">
+                <img src="img/chessboard final version.png" width="50%">
+                <br>
+                <em>The final version of the Processing sketch</em>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <h2>Result and design critique</h2>
+            <div class="grid">
+              <div class="cell">
+                <p>For the result, I am quite happy with the result. There is some issues with the sensor since it did not read always read the values accurately. There are mainly two potentional issues that could cause this. I did not do any data processing such as sampling, which could cause to inaccuracies. The sensor could also be broken, but the one I used was all new, so that should not be an issue unless it is a manufacturing issue. For a final version, this needs to be addressed.</p>
+                <p>The critique I got was good. The interaction felt interesting and self explainatory, which was nice to hear. I explained the original idea with two sensors, which they all understood. I got some critique about not using a proper ideation process, which would have helped me with my time. As mentioned, I tried to make an interaction with my tattoo, but when I realized that it was too inaccurate, I went back to square one and had no idea what to do. This chess idea was just an Heureika moment and I was just lucky that I got the idea. Otherwise, I'd probably be stuck and just trying to get something to hand in, which is a recipe for bad design. If I used proper ideation methods, I would have came up with several ideas that I could fall back to. I did not have this and was "just lucky" to get another doable idea in the time frame I had.</p>
+              </div>
+              <div class="cell center">
+                <img src="img/chess showcase.jpeg" width="70%">
+                <br>
+                <em>Showcasing the interaction during the design critique</em>
+              </div>
+            </div>
           </div>
         </div>
         

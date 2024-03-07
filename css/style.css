@@ -25,7 +25,9 @@
   font-weight: bold;
 
 }
-
+.intro-slide h2 {
+  color: #fff;
+}
 .content {
   margin: 100px;
 }

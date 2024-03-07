@@ -108,6 +108,11 @@
               <p>For this project, me and my teammate met up and did some brainstorming. I did have an idea based on personal experience and Deep Pressure Therapy. The basic idea was a wristband that would hug the wearer to reduce stress. We took it a step further and set our target group to individuals with Autism, since they can be sensitive to impressions.</p>
               <p>Our initial idea was to work with sound levels since people with Autism is known to be sensitive to loud sounds, but due to the lack of sensors, we switched to light instead. My teammate knew a person with Autism that was sensitive to high light levels, so we chose to focus on that.</p>
             </div>
+            <div class="cell center">
+              <img src="img/assignment 2 sketch.png" width="95%">
+              <br>
+              <em>The first initial sketch</em>
+            </div>
           </div>
         </div>
       </div>
@@ -118,16 +123,16 @@
               <h1>Theory</h1>
               <h2>The hug machine</h2>
               <p>Before discussing what Deep Pressure Therapy is, let us look where it all started.</p>
-              <p>Temple Grandin, born in 1947, is a scientist which was not diagnosed with autism until her 40s, and is one of the first people that documented how it was like living with autism (barncroft). Her experiences led her to develop the Hug Machhine. It all started on her aunts' farm, where she noticed that cattles passing through the chutes was calmer when they had passed compared to before, and constructed a similar construction in hopes to calm down herself. The hug machine is a construction that squeezes the body evenly, providing pressure on the whole body. This is a tool used today to calm down people with autism.</p>
-              <em>Source: <a href="https://www.bancroft.org/resources/the-calming-effect-temple-grandin/">https://www.bancroft.org/resources/the-calming-effect-temple-grandin/</a></em>
+              <p>Temple Grandin, born in 1947, is a scientist which was not diagnosed with autism until her 40s, and is one of the first people that documented how it was like living with autism (Barncroft, 2021). Her experiences led her to develop the Hug Machhine. It all started on her aunts' farm, where she noticed that cattles passing through the chutes was calmer when they had passed compared to before, and constructed a similar construction in hopes to calm down herself. The hug machine is a construction that squeezes the body evenly, providing pressure on the whole body. This is a tool used today to calm down people with autism.</p>
+              <em>Source: <a href="https://www.bancroft.org/resources/the-calming-effect-temple-grandin/">Bancroft. “The Calming Effect: Temple Grandin.” Bancroft, 24 June 2021, www.bancroft.org/resources/the-calming-effect-temple-grandin/.</a></em>
 
             </div>
             <div class="cell">
               <div class="slightmargin">
                 <h2>What is Deep Pressure Therapy?</h2>
-                <p>Deep Pressure Therapy is, simply put, the use of pressure in the form of stroking, hugging or any form of pressure on the skin. The act of swaddling a baby to calm it down is a form of Deep Pressure Therapy. The most popular commercial product on the market utilizing this is weighted blankets.</p>
+                <p>Deep Pressure Therapy is, simply put, the use of pressure in the form of stroking, hugging or any form of pressure on the skin (Karmara, 2021). The act of swaddling a baby to calm it down is a form of Deep Pressure Therapy. The most popular commercial product on the market utilizing this is weighted blankets.</p>
                 <p>On a more biological level, when deep pressure is applied to the skin, the sympathetic nervous system deactivates and the parasympathetic nervous system activates. The sympathetic nervous system is responsible for the "fight or flight" response and is activated during stress, fright and anxiety. The parasympathetic nervous system is the opposite, and triggers when you feel calmness. It releases Dopamine, which gives you the feeling of pleassure and satisfaction, and Serotonin, which contributes to a stable mood, happiness and even better sleep. Since deep pressure activates the release of these hormones, it is clear that the user will feel more calm.</p>
-                <em>Source: <a href="https://karmara.co.uk/blogs/learn/deep-touch-pressure-therapy">https://karmara.co.uk/blogs/learn/deep-touch-pressure-therapy</a></em>
+                <em>Source: <a href="https://karmara.co.uk/blogs/learn/deep-touch-pressure-therapy">Karmara. “The Definitive Guide to Deep Touch Pressure Therapy.” Karmara, 11 Aug. 2021, karmara.co.uk/blogs/learn/deep-touch-pressure-therapy. Accessed 6 Mar. 2024.</a></em>
               </div>
             </div>
           </div>
@@ -150,18 +155,110 @@
             <div class="grid">
               <div class="cell">
                 <h2>Prototyping - The circuit</h2>
-                <p>We started of by constructing our circuit that our wristband would use. The circuit consists of a light sensor and a 180 degree servo motor. The arduino was programmed so when the light sensor would record a value, the servo would turn. This servo would be responsible for the hug of the wristband.</p>
+                <p>We started of by constructing our circuit that our wristband would use. The circuit consists of a light sensor and a 180 degree servo motor. The arduino was programmed so when the light sensor would record a value, the servo would turn. This servo would be responsible for the hug of the wristband. When we saw that the circuit worked as intended, we started to construct the wristband</p>
               </div>
               <div class="cell center">
-                <video controls>
-                  <source src="videos/first circuit.mp4" type="video/mp4">
-                </video>
+                <video src="videos/first circuit.mp4" controls></video>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <div class="grid">
+              <div class="cell">
+                <h2>Prototyping - The wristband</h2>
+                <p>To remain simple and not commit too much to the design, we used a simple piece of cloth that we found in MIDDLA. We sew together the servo and the cloth to have them connected. The cloth became round like a wristband and could now be weared by the user.</p>
+                <p>The result of the prototype was a simple, somewhat weak but noticable wristband that had the intended effect. The only downside is that the servo motor needs to be held up in order to tighten the motor, otherwise the servo itself would spin around. All and all, a solid first prototype.</p>
+              </div>
+              <div class="cell center">
+                <video src="videos/wristband v1.mp4" controls></video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <div class="grid">
+              <div class="cell">
+                <h2>Design critique and reflection</h2>
+                <p>The first design critique for this prototype went pretty well. We explained how Deep Pressure Therapy works to create more understanding of the purpose of the wristband. We then let our peers try it and even though the motor was pretty weak, they felt a noticeable tightning of the wristband when the light level threshold was reached.</p>
+                <p>The critique we got was that the design was interesting. One thing that contradicted our theory was that when the studio manager Dee came by and tried the wristband, she felt a bit stressed when the wristband tightened instead of calming down. It is worth noting that Deep Pressure Therapy is not foolproof and does not work for everyone. However, it is used to calm people with special needs down and does indeed work. By personal experience, we could maybe work with heat instead of hugs to provide another way of calming down the user. I know that heat is another way to calm myself down, but I do not know how it would work on our target group and needs to be explored further.</p>
+                <p>Within our critique group, we discussed that this is not limited to wristbands. This concept could be used in any piece of clothing to create "huggable clothing". One could go to the extreme and create a huggable suit that would hug the whole body. While we are not sure of how to build it, we could imagine it working simply by looking at our simple prototype. I think we really showed the concept really good and showed that our prototype can fill some space on the commercial market</p>
+                <p>Dee pointed out that this is something that could be taken further into a masters project and I think I will if I do not get another idea. I feel somewhat connected to the project since I could benefit from something like this and while there are commercial products already available, like weighted vests, they are quite bulky and does not really look good to wear. Further development in this project could lead to something that is both calming and nice-looking to wear. Current prodducts focus on the calming aspects, which in a certain degree is the most important thing, but the social aspects such as what it looks like is also important, and a poorly looking design used in public is very noticeable and not very discreete. I personally would not like to wear a bulky weighted vest when I am out and about, even if it might aid me, simply because of the looks of it.</p>
+                <p>The Arduino board is not really suitable for this project since it is quite big for wearables. Boards like Adafruit would suit better. But due to the lack of boards in MIDDLA, the Arduino had to suffice.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content center">
+            <h2>Further iteration (Assignment 3)</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <div class="grid">
+              <div class="cell">
+                <h2>Disclaimer - Life happens</h2>
+                <p>This sprint of work was affected by life. My teammate got ill and when we initially decided to sit down and work, I got a drop in slot at the optics when I was there to repair my glasses that I had to take. So it was difficult to find time to work, and it might be reflected in our final result. But as they say, life happens.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <div class="grid">
+              <div class="cell">
+                <h2>Ideation</h2>
+                <p>We sat down and brainstormed how we should continue. We thought about skipping the Arduino and do a wristband that the user would be able to tighten it themselves when needed, but we did not know how to do that and that idea would be less interesting than a wristband that would hug the user in certain conditions, so we decided to stick to our current prototype. We both agreed that we needed to improve the wristband itself, as the cloth was very loose fitting and not super comfortable to wear, so all focus was made on the wristband. Of course, using a smaller circuit board and a stronger servo motor would improve our prototype, we did not have better alternatives available in MIDDLA and the shipping time for our desired components was too long to arrive in time. Therefore, we spent this week on the wristband and its material.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <div class="grid">
+              <div class="cell">
+                <h2>Prototyping - Improving the wristband</h2>
+                <p>We bought a stretchy fabric that would sit more firmly on the wearers arm in the "rest" state, already providing a little bit of pressure to the user. This change in material created a better fit and allowed users of different arm sizes to still get a good and firm fit. It also provided a stronger hug when the wristband tightens. We thought about adding a small plastic shield inside thaé armband to strengthen the feeling of the hug, but we discarded that idea because it would be uncomfortable for the user compared to without it.</p>
+              </div>
+              <div class="cell center">
+                <div class="grid">
+                  <div class="cell">
+                    <img src="img/wristband material.jpg" width="50%">
+                    <br>
+                    <em>The improved wristband</em>
+                  </div>
+                  <div class="cell">
+                    <img src="img/plastic.jpg" width="50%">
+                    <br>
+                    <em>The plastic shield we discarded</em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <div class="grid">
+              <div class="cell">
+                <h2>Design critique and reflection</h2>
+                <p>Given that the design remained pretty similar to the last design crit, the critique we got was quite similar. Our peers liked how the wristband fitted and how the hugging felt. There was not any troubling about our design except for the construction, but that was due to the Arduino. For a commercial version, we really need to use a smaller boards intended for wearables. Being stuck to an Arduino board is not viable.</p>
+                <p>I think that due to the time clashes with my teammate, we might have achieved less than we could. This second design sprint was as mentioned spent on the wristband, which was quite simple. If we had more time, we could have worked on the circuit and try to improve the hugging mechanism. But as mentioned, we did not have access to stronger motors in MIDDLA, so we would have to order those ourselves.</p>
+                <p>To end it all, I am satisfied with what we achieved. Our prototype definately shows the concept and does allow for further iterations to a commercial product. I truly believe that this is something that people would benefit from.</p>
+              </div>
+              <div class="cell"></div>
             </div>
           </div>
         </div>
       </div>
     </div>  
+    <div class="section intro-slide center">
+      <h1>Thank you for your time!</h1>
+      <h2>Questions? mail me at <a href="mailto:shallma@kth.se">shallma@kth.se</a></h2>
+    </div>
   </div>
     
   </div>
